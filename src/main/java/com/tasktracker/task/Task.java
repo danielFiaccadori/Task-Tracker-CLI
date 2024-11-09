@@ -8,6 +8,7 @@ public class Task {
     private Integer id;
     private String description;
     private Instant createdAt;
+    private Status status;
     private Instant updatedAt;
 
     public Task() {
@@ -41,6 +42,14 @@ public class Task {
 
     public void setUpdatedAt(Instant updatedAt) {
         this.updatedAt = updatedAt;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
     }
 
     @Override
